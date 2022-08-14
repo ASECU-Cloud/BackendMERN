@@ -15,6 +15,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use("/testserver", (req, res, next) => {
+  res.status(200).json({ Server: "server is up! :D" });
+});
+
 // routes
 app.use("/user", loginRoutes);
 app.use("/api/toko", tokoRoutes);
