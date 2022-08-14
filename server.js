@@ -30,7 +30,7 @@ mongoose
   .then(() => {
     console.log("\u001b[1;32mDatabase Connected !\u001b[0m");
     // listen
-    app.listen(process.env.PORT || 4000, () => {
+    app.listen(process.env.PORT || 80, () => {
       console.log(`Server Created     : http://localhost:${process.env.PORT}`);
       console.log("listening on port  :", process.env.PORT);
     });
