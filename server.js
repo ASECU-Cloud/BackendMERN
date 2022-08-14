@@ -17,6 +17,7 @@ app.use((req, res, next) => {
 
 app.use("/testserver", (req, res, next) => {
   res.status(200).json({ Server: "server is up! :D" });
+  next();
 });
 
 // routes
